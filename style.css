@@ -12,7 +12,7 @@
 }
 
 .page {
-  max-width: 38.4rem;
+  max-width: 41.4rem;
   margin: 0 auto;
   background-color: #eff1ff;
 }
@@ -67,6 +67,7 @@ main {
   text-align: center;
   align-items: center;
   background-color: #eff1ff;
+
 }
 
 .card {
@@ -132,7 +133,7 @@ main {
   }
 }
 
-@media (min-width: 846px) {
+@media (min-width: 768px) {
   .page {
     display: flex;
     margin: auto 0;
@@ -155,7 +156,7 @@ main {
   }
 }
 
-@media (min-width: 1005px) {
+@media (min-width: 1200px) {
   .page {
     display: flex;
     margin: auto 0;
