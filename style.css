@@ -39,9 +39,12 @@ header h1 {
   justify-content: center;
   display: flex;
   margin-bottom: 2.9rem;
+
+  animation: logo 700ms 100ms backwards;
 }
 
 header img {
+  animation: logo 700ms 100ms backwards;
   width: 13.7rem;
   height: 13.7rem;
 }
@@ -52,7 +55,7 @@ main {
 
   padding: 3.2rem;
 
-  animation: cards 700ms 500ms backwards;
+  animation: cards 700ms 600ms backwards;
 }
 
 .text {
@@ -67,6 +70,8 @@ main {
   text-align: center;
   align-items: center;
   background-color: #eff1ff;
+
+  animation: logo 600ms 100ms backwards;
 
 }
 
@@ -127,6 +132,17 @@ main {
     transform: translateY(-15px);
   }
 
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes logo{
+  0%{
+    opacity: 0;
+    transform: translateY(-50px);
+  }
   100% {
     opacity: 1;
     transform: translateY(0px);
@@ -203,6 +219,7 @@ main {
 
 
   header img {
+    margin-top: 20px;
     width: 214.47px;
     height: 16.7rem;
   }
