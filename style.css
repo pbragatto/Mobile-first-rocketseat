@@ -51,6 +51,8 @@ main {
   gap: 3.6rem;
 
   padding: 3.2rem;
+
+  animation: cards 700ms 500ms backwards;
 }
 
 .text {
@@ -68,6 +70,9 @@ main {
 
 .card{
   position: relative;
+
+  transition: all 400ms;
+
 }
 
 .card img {
@@ -75,6 +80,10 @@ main {
   height: auto;
   border-radius: 20px;
   object-fit: cover;
+  opacity: 0.8;
+  transition: all 400ms;
+  
+
 }
 
 
@@ -98,6 +107,33 @@ main {
   border-radius: 2.0rem;
 
   justify-content: center;
-  
 
+
+  transition: all 700ms;
+}
+
+.card:hover{
+  opacity: 1;
+  filter: saturate(1.2);
+  transform: scale(1.1) ;
+  transition: all 400ms;
+
+}
+
+.card img:hover{
+  opacity: 1;
+  transition: all 400ms;
+
+}
+
+@keyframes cards{
+  0%{
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
