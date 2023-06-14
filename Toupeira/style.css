@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main img {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  z-index: -2;
+}
+
+.toupeira {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+
+  display: grid;
+  z-index: 0;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  opacity: 1;
+}
+
+.toupeira img {
+  z-index: 0;
+}
+.A:hover {
+  cursor: pointer;
+  transition: all;
+  animation: toupeira 1.5s;
+}
+
+.B:hover {
+  cursor: pointer;
+  transition: all;
+  animation: toupeira 1.5s;
+}
+.C:hover {
+  cursor: pointer;
+  transition: all;
+  animation: toupeira 1.5s;
+}
+.D:hover {
+  cursor: pointer;
+  transition: all;
+  animation: toupeira 1.5s;
+}
+.E:hover {
+  cursor: pointer;
+  transition: all;
+  animation: toupeira 1.5s;
+}
+.F:hover {
+  cursor: pointer;
+  transition: all;
+  animation: toupeira 1.5s;
+}
+.G:hover {
+  cursor: pointer;
+  transition: all;
+  animation: toupeira 1.5s;
+}
+.H:hover {
+  cursor: pointer;
+  transition: all;
+  animation: toupeira 1.5s;
+}
+.I:hover {
+  cursor: pointer;
+  transition: all;
+  animation: toupeira 1.5s;
+}
+.J:hover {
+  cursor: pointer;
+  transition: all;
+  animation: toupeira 1.5s;
+}
+.K:hover {
+  animation: toupeira 1.5s;
+  transition: all;
+}
+.L img:hover {
+  z-index: 0;
+  cursor: pointer;
+  animation: toupeira 1.5s 1ms;
+  transition: all;
+}
+
+@keyframes toupeira {
+  0% {
+    z-index: 1;
+    background-image: url(./assets/toupeira6.svg);
+  }
+  10% {
+    z-index: 1;
+    background-image: url(./assets/toupeira1.svg);
+  }
+  20% {
+    z-index: 1;
+    background-image: url(./assets/toupeira2.svg);
+  }
+  30% {
+    z-index: 1;
+    background-image: url(./assets/toupeira3.svg);
+  }
+  40% {
+    z-index: 1;
+    background-image: url(./assets/toupeira4.svg);
+  }
+  50% {
+    z-index: 1;
+    background-image: url(./assets/toupeira5.svg);
+  }
+  60% {
+    z-index: 1;
+    background-image: url(./assets/toupeira6.svg);
+  }
+  70% {
+    z-index: 1;
+    background-image: url(./assets/toupeira5.svg);
+  }
+  80% {
+    z-index: 1;
+    background-image: url(./assets/toupeira4.svg);
+  }
+  90% {
+    z-index: 1;
+    background-image: url(./assets/toupeira3.svg);
+  }
+
+  95% {
+    z-index: 1;
+    background-image: url(./assets/toupeira2.svg);
+  }
+  100% {
+    z-index: 1;
+    background-image: url(./assets/toupeira1.svg);
+  }
+}
